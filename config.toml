@@ -1,0 +1,4 @@
+baseURL = 'http://engine-programming.github.io/'
+languageCode = 'en-us'
+title = 'Learn Game Engine Programming'
+theme = 'nostyleplease'
