@@ -46,6 +46,8 @@ The [*Performance-Aware Programming* Series](https://www.computerenhance.com/p/w
 
 The book [*Computer Systems: A Programmer's Perspective*](http://csapp.cs.cmu.edu/) by Randal E. Bryant and David R. O'Hallaron also covers the fundamentals. Additionally, it introduces systems programming on Linux. Most game programming is done on Windows, but the concepts covered in the book are fundamental enough to carry over. It requires Linux for doing some of the labs.
 
+[*Algorithms for Modern Hardware*](https://en.algorithmica.org/hpc/) by Sergei Slotin is not finished, so it currently doesn't cover as many topics with the same depth, but can be useful nontheless.
+
 A reference for the performance characteristics of x86 instructions is [uops.info](https://uops.info/).
 
 A reference for intrinsics is the [Intel Intrinsics Guide](https://www.intel.com/content/www/us/en/docs/intrinsics-guide/index.html).
@@ -138,8 +140,52 @@ Vulkan:
 [*What is Rollback Netcode?*](https://bymuno.com/post/rollback) by Muno illustrates rollback netcode using gifs. It gives an intuition for some of the problems that networking can face in games.
 
 Glenn Fiedler wrote many articles about networking in different series.
-* [*Networking for Game Programmers*](https://gafferongames.com/categories/game-networking/)
-* [*Networked Physics*](https://gafferongames.com/categories/networked-physics/)
-* [*Building a Game Network Protocol*](https://gafferongames.com/categories/building-a-game-network-protocol/)
+* [*Networking for Game Programmers*](https://gafferongames.com/categories/game-networking/).
+* [*Networked Physics*](https://gafferongames.com/categories/networked-physics/).
+* [*Building a Game Network Protocol*](https://gafferongames.com/categories/building-a-game-network-protocol/).
+
+# A. Math
+
+Some parts of an engine can require a lot of math, such as rendering or physics.
+
+Introductory linear algebra:
+* [*Linear Algebra*](https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/) by Gilbert Strang.
+* [*Introduction to Applied Linear Algebra – Vectors, Matrices, and Least Squares*](https://web.stanford.edu/~boyd/vmls/) by Stephen Boyd and Lieven Vandenberghe.
+* [*Calculus BLUE Vol 1 : Vectors & Matrices*](https://www.youtube.com/playlist?list=PL8erL0pXF3JYm7VaTdKDaWc8Q3FuP8Sa7) by Robert Ghrist.
+* [*Essence of Linear Algebra*](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab) by 3Blue1Brown.
+
+More rigorous or advanced linear algebra:
+* [*Linear Algebra Done Right*](https://linear.axler.net/) by Sheldon Axler.
+* [*Linear Algebra Done Wrong*](https://www.math.brown.edu/streil/papers/LADW/LADW.html) by Sergei Treil.
+* [*Vector Calculus, Linear Algebra, and Differential Forms: A Unified Approach*](https://matrixeditions.com/5thUnifiedApproach.html) by John H. Hubbard and Barbara Burke Hubbard.
+
+Calculus:
+* [*Calculus GREEN*](https://www.youtube.com/playlist?list=PL8erL0pXF3JaFSMdokheNMvTa96jdc4GU) by Robert Ghrist, only the first volume is currently available.
+* [*Calculus BLUE*](https://www.youtube.com/playlist?list=PL8erL0pXF3JYm7VaTdKDaWc8Q3FuP8Sa7) by Robert Ghrist. The first volume is also an introduction to linear algebra.
+
+# B. Physics
+
+Classical Newtonian mechanics is the most relevant field of physics for games.
+
+Basics of physics:
+* [*Fundamentals of Physics I*](9https://oyc.yale.edu/physics/phys-200) by Ramamurti Shankar.
+* [*The Feynman Lectures on Physics, Volume I*](https://www.feynmanlectures.caltech.edu/I_toc.html) by Feynman, Leighton, and Sands. Chapter 9 is particularly useful, among other things it introduces numerical integration.
+
+# C. Misc links
+
+* [*Teach Yourself Computer Science*](https://teachyourselfcs.com/) by by Oz Nova and Myles Byrne: a more general list of resources for self-learning computer science.
+* [Handmade Network](https://handmade.network/), a community of programmers, many of whom have an interest in engine programming. Their Discord server is a good place to ask questions when you need help.
 
 # FAQ
+
+**Q**: How were the resources listed here chosen?
+
+**A**: I used many (but not all) of the resources myself. Some have been recommended by other people, in which case I at least take a look to check if they are relevant and if they meet basic quality standards.
+
+**Q**: Is engine programming right for me?
+
+**A**: If you just want to make games, use an existing engine such as Unreal or Unity. On the other hand, people drawn to making engines are in it for the pleasure of low-level programming, of knowing how everything works and of doing things themselves. You may find the resources listed here useful even if you do not plan on becoming an engine programmer.
+
+**Q**: Who wrote this page?
+
+**A**: I'm Radek Jurga, I work as an engine programmer. I studied physics and then learned programming on my own, using many of the resources listed above. I wrote this primarily for a friend who I am mentoring, he is a physician in the process of changing career to also become an engine programmer, goal toward which he is making excellent progress. I hope that other people will find the page useful too.
