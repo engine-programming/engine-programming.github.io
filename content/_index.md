@@ -168,7 +168,7 @@ Calculus:
 Classical Newtonian mechanics is the most relevant field of physics for games.
 
 Basics of physics:
-* [*Fundamentals of Physics I*](9https://oyc.yale.edu/physics/phys-200) by Ramamurti Shankar.
+* [*Fundamentals of Physics I*](https://oyc.yale.edu/physics/phys-200) by Ramamurti Shankar.
 * [*The Feynman Lectures on Physics, Volume I*](https://www.feynmanlectures.caltech.edu/I_toc.html) by Feynman, Leighton, and Sands. Chapter 9 is particularly useful, among other things it introduces numerical integration.
 
 # C. Misc links
