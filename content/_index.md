@@ -14,7 +14,7 @@ Otherwise, there is an abundance of resources for learning the basics of program
 
 As part of your basic training, it is also useful to learn the fundamentals of algorithms and data structures. A book that uses C to teach them is [*The Algorithm Design Manual*](https://www.algorist.com/) by Steven Skiena.
 
-A website that offers fun exercises to practice algorithms and data structures is [*Advent of Code*](https://adventofcode.com/). New challenges are added every year in december.
+A website that offers fun exercises to practice algorithms and data structures is [*Advent of Code*](https://adventofcode.com/). New challenges are added every year in December.
 
 # 2. Programming Languages
 
@@ -35,7 +35,7 @@ When you need to quickly look up some details, the best C and C++ reference onli
 Engine programmers avoid using some parts of C++. It can depend on personal preference, but sometimes also for good reasons. Here are common examples with links to typical justifications:
 * Splitting code into many small functions: [John Carmack on Inlined Code](http://number-none.com/blow/john_carmack_on_inlined_code.html).
 * Object-oriented features such as virtual functions: [*"Clean" Code, Horrible Performance*](https://www.computerenhance.com/p/clean-code-horrible-performance) by Casey Muratori.
-* The STL: [Twitter thread](https://twitter.com/m_ninepoints/status/1497768472184430600) by Jeremy Ong. Many engine programmers end up developping their own replacement of the STL, such as the [Electronics Arts Standard Template Library](https://github.com/electronicarts/EASTL) whose documentation contains justifications.
+* The STL: [Twitter thread](https://twitter.com/m_ninepoints/status/1497768472184430600) by Jeremy Ong. Many engine programmers end up developing their own replacement of the STL, such as the [Electronics Arts Standard Template Library](https://github.com/electronicarts/EASTL) whose documentation contains justifications.
 * Exceptions: [Hacker News comment](https://news.ycombinator.com/item?id=28164247) by Walter Bright.
 
 # 4. Computer Architecture and Performance
@@ -54,7 +54,7 @@ A programming approach often adopted in engine programming is known as data-orie
 
 # 5. Engine Programming
 
-Finally, you have learned the fundamentals and it is now time to learn about game engines. You do not need to finishing learning all the fundamentals before starting this.
+Finally, you have learned the fundamentals and it is now time to learn about game engines. You do not need to finish learning all the fundamentals before starting this.
 
 [*Game Engine Architecture*](https://www.gameenginebook.com/) by Jason Gregory gives a broad overview of how game engines are organized. It will make you familiar with the different parts of a typical engine.
 
