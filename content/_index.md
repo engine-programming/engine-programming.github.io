@@ -174,7 +174,7 @@ Basics of physics:
 # C. Misc links
 
 * [*Teach Yourself Programming in Ten Years*](http://norvig.com/21-days.html) by Peter Norvig, general advice about learning programming.
-* [*Teach Yourself Computer Science*](https://teachyourselfcs.com/) by by Oz Nova and Myles Byrne: a more general list of resources for self-learning computer science.
+* [*Teach Yourself Computer Science*](https://teachyourselfcs.com/) by Oz Nova and Myles Byrne: a more general list of resources for self-learning computer science.
 * [Handmade Network](https://handmade.network/), a community of programmers, many of whom have an interest in engine programming. Their Discord server is a good place to ask questions when you need help.
 
 # FAQ
