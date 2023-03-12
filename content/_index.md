@@ -46,7 +46,7 @@ The [*Performance-Aware Programming* Series](https://www.computerenhance.com/p/w
 
 The book [*Computer Systems: A Programmer's Perspective*](http://csapp.cs.cmu.edu/) by Randal E. Bryant and David R. O'Hallaron also covers the fundamentals. Additionally, it introduces systems programming on Linux. Most game programming is done on Windows, but the concepts covered in the book are fundamental enough to carry over. It requires Linux for doing some of the labs.
 
-[*Algorithms for Modern Hardware*](https://en.algorithmica.org/hpc/) by Sergei Slotin is not finished, so it currently doesn't cover as many topics with the same depth, but can be useful nontheless.
+[*Algorithms for Modern Hardware*](https://en.algorithmica.org/hpc/) by Sergey Slotin is not finished, so it currently doesn't cover as many topics with the same depth, but can be useful nontheless.
 
 A reference for the performance characteristics of x86 instructions is [uops.info](https://uops.info/).
 
