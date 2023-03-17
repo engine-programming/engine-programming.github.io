@@ -4,71 +4,79 @@ date = 2022-08-25T21:30:04+08:00
 draft = false
 +++
 
-This is a list of self-learning resources for game engine programming aimed at beginners. Some are free, some are paid. It is not exhaustive and does not cover everything you need to know to become a great engine programmer, but it will get you started and lead you part of the way. You are not required to follow this curriculum exactly, pick what you need. Some resources overlap in content, choose the ones that you like more, or consult several ones if you want things explained in multiple different ways.
+This is a list of self-learning resources for game engine programming. It is not exhaustive, there are many more things to learn, but it will get you started.
 
 # 1. Programming Basics
 
-A good place to start is the [*Handmade Hero*](https://handmadehero.org/) video series by Casey Muratori. It has no prerequisites and shows how to make a game engine from scratch in C. However, the intro to C is rather brief and you may find it insufficient. In that case, complement it with other C and C++ resources listed in the next section.
+Engines are mostly written in C++ because it maps somewhat directly to how the CPU works, which allows to achieve high performance.
 
-Otherwise, there is an abundance of resources for learning the basics of programming in ways not explicitly related to engines. They are not listed here. The rest of this guide assumes that you already know programming in at least one language.
+The [*Handmade Hero*](https://handmadehero.org/) video series by Casey Muratori shows how to make an engine from scratch in C, which is a subset of C++. However, Handmade Hero's intro to C is brief and likely insufficient if you do not already have enough programming experience. If that is your case, complement it with other resources.
 
-As part of your basic training, it is also useful to learn the fundamentals of algorithms and data structures. A book that uses C to teach them is [*The Algorithm Design Manual*](https://www.algorist.com/) by Steven Skiena.
+Stack Overflow has a [list of C++ books](https://stackoverflow.com/questions/388242/the-definitive-c-book-guide-and-list), including two introductory ones. Of these, *C++ Primer* is appropriate if you already programmed before, and *Programming: Principles and Practice Using C++* if you never did.
 
-A website that offers fun exercises to practice algorithms and data structures is [*Advent of Code*](https://adventofcode.com/). New challenges are added every year in December.
+When you need to quickly look something up, an online reference for C and C++ is [cppreference.com](https://en.cppreference.com/). If you prefer something written in a more informal style and that is easier to read, [*The C++ Programming Language*](https://www.stroustrup.com/4th.html) by Bjarne Stroustrup.
 
-# 2. Programming Languages
+# 2. Programming Best Practices
 
-Engines are mostly written in C and C++ because these languages map somewhat directly to how the CPU works, which allows to achieve high performance.
+C++ is a huge language with many parts and features that can be used in many different ways. Engine programmers often only use some parts of the language, and only in some ways.
 
-[*Modern C*](https://gustedt.gitlabpages.inria.fr/modern-c/) by Jens Gustedt introduces the C language. It is not aimed at complete beginners because it teaches the specifics of the language, as opposed to general programming concepts.
+[*The Rules of Programming: How to Write Better Code*](https://www.oreilly.com/library/view/the-rules-of/9781098133108/) by Chris Zimmerman explains the programming practices used at the video game studio Sucker Punch Productions where they make their own engine.
 
-C++ is built on the foundations laid out by C. It is a huge language with many parts and features. Engine programmers usually like to use some parts, but less so other parts (more about that in the next section). Regardless of whether you like some features or not, you are likely to encounter most of them at some point in your career, so it is useful to learn about them once even if you do not use them frequently.
+Additional examples of practices sometimes followed:
+* [John Carmack on Inlined Code](http://number-none.com/blow/john_carmack_on_inlined_code.html).
+* [John Carmack on Functional Programming in C++](http://www.sevangelatos.com/john-carmack-on/).
 
-*C++ Primer* by Stanley Lippman, Josée Lajoie, and Barbara E. Moo is an introductory book that is accessible to beginners. You can also start directly there without first learning C.
-
-When you need to quickly look up some details, an online reference for C and C++ is [cppreference.com](https://en.cppreference.com/). If you need a reference written in a more informal style and that is easier to read, [*The C++ Programming Language*](https://www.stroustrup.com/4th.html) by Bjarne Stroustrup is useful.
-
-# 3. Programming Best Practices
-
-[*The Rules of Programming: How to Write Better Code*](https://www.oreilly.com/library/view/the-rules-of/9781098133108/) by Chris Zimmerman explains the programming practices used at the video game studio Sucker Punch Productions where they make their own engine. Many examples are drawn from their games.
-
-Engine programmers avoid using some parts of C++. It can depend on personal preference, but sometimes also for good reasons. Here are common examples with links to typical justifications:
-* Splitting code into many small functions: [John Carmack on Inlined Code](http://number-none.com/blow/john_carmack_on_inlined_code.html).
+On the other hand, here are examples of C++ features and practices that are sometimes avoided, with links to typical justifications:
 * Object-oriented features such as virtual functions: [*"Clean" Code, Horrible Performance*](https://www.computerenhance.com/p/clean-code-horrible-performance) by Casey Muratori.
-* The STL: [Twitter thread](https://twitter.com/m_ninepoints/status/1497768472184430600) by Jeremy Ong. Many engine programmers end up developing their own replacement of the STL, such as the [Electronics Arts Standard Template Library](https://github.com/electronicarts/EASTL) whose documentation contains justifications.
+* The STL: [Twitter thread](https://twitter.com/m_ninepoints/status/1497768472184430600) by Jeremy Ong. Many engines use their own replacement of the STL, such as the [Electronics Arts Standard Template Library](https://github.com/electronicarts/EASTL) whose documentation contains [justifications](https://github.com/electronicarts/EASTL/blob/master/doc/FAQ.md#info6-why-is-there-eastl-when-there-is-the-stl).
 * Exceptions: [Hacker News comment](https://news.ycombinator.com/item?id=28164247) by Walter Bright.
+
+# 3. Algorithms and Data Structures
+
+Algorithms and data structures are fundamental to solving problems with code. They are used everywhere in engines. You need to know their characteristics.
+
+A book that uses C to teach them is [*The Algorithm Design Manual*](https://www.algorist.com/) by Steven Skiena.
+
+A website with fun exercises to practice is [*Advent of Code*](https://adventofcode.com/).
+
+Further reading:
+* [*I've been writing ring buffers wrong all these years*](https://www.snellman.net/blog/archive/2016-12-13-ring-buffers/) by Juho Snellman.
 
 # 4. Computer Architecture and Performance
 
-## General
+Engine programming requires a good understanding of how computers work in order to achieve the high performance required for real-time interactive games.
 
-The [*Performance-Aware Programming* Series](https://www.computerenhance.com/p/welcome-to-the-performance-aware) by Casey Muratori teaches the basics.
+## Basics
 
-The book [*Computer Systems: A Programmer's Perspective*](http://csapp.cs.cmu.edu/) by Randal E. Bryant and David R. O'Hallaron also covers the fundamentals. Additionally, it introduces systems programming on Linux. Most game programming is done on Windows, but the concepts covered in the book are fundamental enough to carry over. It requires Linux for doing some of the labs.
+The [*Performance-Aware Programming* Series](https://www.computerenhance.com/p/welcome-to-the-performance-aware) by Casey Muratori teaches everything that you really need to know well.
+
+For a book, [*Computer Systems: A Programmer's Perspective*](http://csapp.cs.cmu.edu/) by Randal E. Bryant and David R. O'Hallaron. It has a slightly broader scope, introducing topics in operating systems, networking, and systems programming on Linux. Most engine programming is done on Windows, but the concepts covered in the book are fundamental enough to carry over. However, it does requires Linux for doing the labs.
 
 [*Algorithms for Modern Hardware*](https://en.algorithmica.org/hpc/) by Sergey Slotin is not finished, so it currently doesn't cover as many topics with the same depth, but can be useful nontheless.
 
-A reference for the performance characteristics of x86 instructions is [uops.info](https://uops.info/).
+Online reference for intrinsics: [Intel Intrinsics Guide](https://www.intel.com/content/www/us/en/docs/intrinsics-guide/index.html).
 
-A reference for intrinsics is the [Intel Intrinsics Guide](https://www.intel.com/content/www/us/en/docs/intrinsics-guide/index.html).
+Online tool to see the floating point representation of a number: [Float Exposed](https://float.exposed/).
 
-A tool to see the floating point representation of a number is [Float Exposed](https://float.exposed/).
+## Advanced
 
-## Advanced Computer Architecture
-
-Knowing the basics well is enough as a beginning generalist engine programmer. Though if you want to specialize in optimization, *Computer Architecture: A Quantitative Approach* by John L. Hennessy and David A. Patterson gives a lot more details about the way hardware works.
+Knowing the basics well is enough as a beginning generalist engine programmer. But if you want to specialize in optimization, *Computer Architecture: A Quantitative Approach* by John L. Hennessy and David A. Patterson gives a lot more details about the way hardware works.
 
 ## Assembly
 
-It is important to know how to read assembly, but not necessarily to write it yourself. One of the main uses is to verify that the compiler did what you expect with your code, for example in terms of optimization.
+You do not necessarily need to know how to write assembly yourself, but you need to know how to read it. One of the main uses is to verify that the compiler did what you expect with your code, for example in terms of optimization.
 
 [Compiler Explorer](https://godbolt.org/) is a tool that lets you see the assembly that various compilers produce from your code snippets. You can learn a lot just by playing with it.
 
-The incomplete [*Applied Reverse Engineering*](https://revers.engineering/applied-reverse-engineering-series/) series by Daax Rynd currently covers the basics.
+The basic resources listed previously already cover assembly, but more specific resources are listed here.
+
+The [*Applied Reverse Engineering*](https://revers.engineering/applied-reverse-engineering-series/) series by Daax Rynd is incomplete, but does cover the basics.
 
 The book [*Reverse Engineering for Beginners*](https://beginners.re/) by Dennis Yurichev is more complete.
 
-For an online reference, you can use [www.felixcloutier.com/x86/](https://www.felixcloutier.com/x86/).
+Online reference for x86 instructions: [www.felixcloutier.com/x86/](https://www.felixcloutier.com/x86/).
+
+Online reference for the performance characteristics of x86 instructions: [uops.info](https://uops.info/).
 
 ## Data-Oriented Design
 
@@ -80,21 +88,19 @@ A programming approach often adopted in engine programming is known as data-orie
 
 # 5. Engine Programming
 
+Finally, we have enough fundamental knowledge and we now turn to engines. But note that you do not need to finish learning all the fundamentals before starting to learn about engines.
+
 ## General
 
-Finally, you have learned the fundamentals and it is now time to learn about game engines. You do not need to finish learning all the fundamentals before starting this.
+[*Game Engine Architecture*](https://www.gameenginebook.com/) by Jason Gregory gives a broad overview of how engines are organized. It will make you familiar with the different parts of a typical engine.
 
-[*Game Engine Architecture*](https://www.gameenginebook.com/) by Jason Gregory gives a broad overview of how game engines are organized. It will make you familiar with the different parts of a typical engine.
-
-The [*Foundations of Game Engine Development*](https://foundationsofgameenginedev.com/) series by Eric Lengyel is not finished yet, but two books are currently available. It covers fundamentals, not the most advanced topics, but it does so in enough detail to enable you to make proper implementations. If you are learning the math of the first book for the first time, it may be too short of an introduction. In that case, refer to the math appendix section of this guide for more complete resources.
-
-Mike Acton gives his advice to new engine programmers in his talk [*Solving the Right Problems for Engine Programmers*](https://www.youtube.com/watch?v=4B00hV3wmMY).
+The [*Foundations of Game Engine Development*](https://foundationsofgameenginedev.com/) series by Eric Lengyel is not finished yet, two books are currently available. It introduces fundamental topics rather than architecture, and it does so in a lot of detail, enabling you to make proper implementations. If you find the math of volume 1 not introductory enough, refer to the math appendix of this guide for more complete resources.
 
 ## Rendering
 
-Rendering is one of the most important parts of an engine. The roles are often split between generalist engine programmer and rendering programmer. However, even as a generalist, you need to know the basics.
+Rendering is one of the most important parts of an engine. There are often specialized roles for rendering, as opposed to generalist engine programmers. However, even as a generalist, you need to know the basics.
 
-Jeremy Ong gives advice on [how to learn graphics programming](https://twitter.com/m_ninepoints/status/1215429886715629569) on Twitter.
+Jeremy Ong gives advice on [how to learn graphics programming](https://twitter.com/m_ninepoints/status/1215429886715629569).
 
 Cem Yuksel's video lectures are general introductions: [*Introduction to Computer Graphics*](https://www.youtube.com/playlist?list=PLplnkTzzqsZTfYh4UbhLGpI5kGd5oW_Hh) and [*Interactive Computer Graphics*](https://www.youtube.com/playlist?list=PLplnkTzzqsZS3R5DjmCQsqupu43oS9CFN).
 
@@ -108,7 +114,7 @@ The [*Ray Tracing in One Weekend*](https://raytracing.github.io/) book series by
 
 A much more complete path tracer is explored in [*Physically Based Rendering: From Theory to Implementation*](https://www.pbrt.org/) by Matt Pharr, Wenzel Jakob, and Greg Humphreys. It covers the theory of physically based rendering and also demonstrates an implementation.
 
-To use the GPU, you need to go through a graphics API. Direct3D 11 is easy to start with. Direct3D 12 and Vulkan are more complex and could hinder your learning of graphics itself. Below are resources for these APIs.
+To use the GPU, you need to go through a graphics API. Direct3D 11 is easy to start with. Direct3D 12 and Vulkan are more complex but they are what modern engines use. Below are resources for these APIs.
 
 Direct3D 11:
 * [The official documentation](https://learn.microsoft.com/en-us/windows/win32/direct3d11/atoc-dx-graphics-direct3d-11).
@@ -119,6 +125,7 @@ Direct3D 12:
 * [The official documentation](https://learn.microsoft.com/en-us/windows/win32/direct3d12/direct3d-12-graphics).
 * [Microsoft's samples](https://github.com/microsoft/DirectX-Graphics-Samples).
 * [*A Gentle Introduction to D3D12*](https://alextardif.com/DX12Tutorial.html) by Alex Tardif.
+* [*DX12 Do's And Don'ts*](https://developer.nvidia.com/dx12-dos-and-donts) by Nvidia.
 
 Vulkan:
 * [*The specification*](https://registry.khronos.org/vulkan/specs/1.1/html/vkspec.html).
@@ -144,34 +151,43 @@ Glenn Fiedler wrote many articles about networking in different series.
 * [*Networked Physics*](https://gafferongames.com/categories/networked-physics/).
 * [*Building a Game Network Protocol*](https://gafferongames.com/categories/building-a-game-network-protocol/).
 
-# A. Math
+# 6. Starting on Your First Job
 
-Some parts of an engine can require a lot of math, such as rendering or physics.
+You do not need to know everything about engines to start working as an engine programmer.
+And when you start, you will then be learning even more on the job.
 
-Introductory linear algebra:
-* [*Linear Algebra*](https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/) by Gilbert Strang.
-* [*Introduction to Applied Linear Algebra – Vectors, Matrices, and Least Squares*](https://web.stanford.edu/~boyd/vmls/) by Stephen Boyd and Lieven Vandenberghe.
-* [*Calculus BLUE Vol 1 : Vectors & Matrices*](https://www.youtube.com/playlist?list=PL8erL0pXF3JYm7VaTdKDaWc8Q3FuP8Sa7) by Robert Ghrist.
-* [*Essence of Linear Algebra*](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab) by 3Blue1Brown.
+Mike Acton gives his advice to new engine programmers in his talk [*Solving the Right Problems for Engine Programmers*](https://www.youtube.com/watch?v=4B00hV3wmMY).
 
-More rigorous or advanced linear algebra:
-* [*Linear Algebra Done Right*](https://linear.axler.net/) by Sheldon Axler.
-* [*Linear Algebra Done Wrong*](https://www.math.brown.edu/streil/papers/LADW/LADW.html) by Sergei Treil.
-* [*Vector Calculus, Linear Algebra, and Differential Forms: A Unified Approach*](https://matrixeditions.com/5thUnifiedApproach.html) by John H. Hubbard and Barbara Burke Hubbard.
+An engine can be a very large program, and learning your way around your company's engine can be intimiading. Jeremy Ong gives advice in [*Grokking Big Unfamiliar Codebases*](https://www.jeremyong.com/game%20engines/2023/01/25/grokking-big-unfamiliar-codebases/).
+
+# Appendices
+
+## A. Math
+
+Some parts of an engine can require a lot of math, such as rendering or physics. The most important fields are trigonometry, calculus, and linear algebra.
 
 Calculus:
 * [*Calculus GREEN*](https://www.youtube.com/playlist?list=PL8erL0pXF3JaFSMdokheNMvTa96jdc4GU) by Robert Ghrist, only the first volume is currently available.
-* [*Calculus BLUE*](https://www.youtube.com/playlist?list=PL8erL0pXF3JYm7VaTdKDaWc8Q3FuP8Sa7) by Robert Ghrist. The first volume is also an introduction to linear algebra.
+* [*Calculus BLUE*](https://www.youtube.com/playlist?list=PL8erL0pXF3JYm7VaTdKDaWc8Q3FuP8Sa7) by Robert Ghrist.
 
-# B. Physics
+Introductory linear algebra:
+* [*Essence of Linear Algebra*](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab) by 3Blue1Brown.
+* [*Calculus BLUE Vol 1 : Vectors & Matrices*](https://www.youtube.com/playlist?list=PL8erL0pXF3JYm7VaTdKDaWc8Q3FuP8Sa7) by Robert Ghrist.
+* [*Linear Algebra*](https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/) by Gilbert Strang.
+* [*Introduction to Applied Linear Algebra – Vectors, Matrices, and Least Squares*](https://web.stanford.edu/~boyd/vmls/) by Stephen Boyd and Lieven Vandenberghe.
 
-Classical Newtonian mechanics is the most relevant field of physics for games.
+Rigorous linear algebra:
+* [*Linear Algebra Done Right*](https://linear.axler.net/) by Sheldon Axler.
+* [*Linear Algebra Done Wrong*](https://www.math.brown.edu/streil/papers/LADW/LADW.html) by Sergei Treil.
 
-Basics of physics:
-* [*Fundamentals of Physics I*](https://oyc.yale.edu/physics/phys-200) by Ramamurti Shankar.
-* [*The Feynman Lectures on Physics, Volume I*](https://www.feynmanlectures.caltech.edu/I_toc.html) by Feynman, Leighton, and Sands. Chapter 9 is particularly useful, among other things it introduces numerical integration.
+## B. Physics
 
-# C. Misc links
+The most relevant field for games is classical Newtonian mechanics. Optics can be useful for understanding rendering techniques.
+
+* [*Fundamentals of Physics I*](https://oyc.yale.edu/physics/phys-200) by Ramamurti Shankar. Also [on YouTube](https://www.youtube.com/playlist?list=PLFE3074A4CB751B2B).
+* [*The Feynman Lectures on Physics, Volume I*](https://www.feynmanlectures.caltech.edu/I_toc.html) by Feynman, Leighton, and Sands.
+
+## C. Misc links
 
 * [*Teach Yourself Programming in Ten Years*](http://norvig.com/21-days.html) by Peter Norvig, general advice about learning programming.
 * [*Teach Yourself Computer Science*](https://teachyourselfcs.com/) by Oz Nova and Myles Byrne: a more general list of resources for self-learning computer science.
