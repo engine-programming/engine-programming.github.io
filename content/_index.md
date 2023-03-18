@@ -114,6 +114,8 @@ The [*Ray Tracing in One Weekend*](https://raytracing.github.io/) book series by
 
 A much more complete path tracer is explored in [*Physically Based Rendering: From Theory to Implementation*](https://www.pbrt.org/) by Matt Pharr, Wenzel Jakob, and Greg Humphreys. It covers the theory of physically based rendering and also demonstrates an implementation.
 
+[Inigo Quilez's web site](https://iquilezles.org/) contains rendering tutorials. He also co-created [Shadertoy](https://www.shadertoy.com/), where people share their shaders.
+
 To use the GPU, you need to go through a graphics API. Direct3D 11 is easy to start with. Direct3D 12 and Vulkan are more complex but they are what modern engines use. Below are resources for these APIs.
 
 Direct3D 11:
@@ -172,7 +174,7 @@ An engine can be a very large program, and learning your way around your company
 
 ## A. Math
 
-Some parts of an engine can require a lot of math, such as rendering or physics. The most important fields are trigonometry, calculus, and linear algebra.
+Some parts of an engine can require a lot of math, such as rendering and physics. The most important fields are trigonometry, calculus, and linear algebra.
 
 Calculus:
 * [*Calculus GREEN*](https://www.youtube.com/playlist?list=PL8erL0pXF3JaFSMdokheNMvTa96jdc4GU) by Robert Ghrist, only the first volume is currently available.
