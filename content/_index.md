@@ -151,6 +151,14 @@ Glenn Fiedler wrote many articles about networking in different series.
 * [*Networked Physics*](https://gafferongames.com/categories/networked-physics/).
 * [*Building a Game Network Protocol*](https://gafferongames.com/categories/building-a-game-network-protocol/).
 
+## Libraries
+
+Engines usually use few libraries. However, there are notable ones known to be commonly used. They satisfy requirements such as ease of integration, ease of debugging, good performance, ...
+
+* [Dear ImGui](https://www.dearimgui.org/).
+* [stb](https://github.com/nothings/stb).
+* [EASTL](https://github.com/electronicarts/EASTL).
+
 # 6. Starting on Your First Job
 
 You do not need to know everything about engines to start working as an engine programmer.
