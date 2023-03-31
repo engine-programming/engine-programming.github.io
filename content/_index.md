@@ -124,13 +124,14 @@ Direct3D 11:
 * [Mārtiņš Možeiko's sample](https://gist.github.com/mmozeiko/5e727f845db182d468a34d524508ad5f).
 
 Direct3D 12:
-* [The official documentation](https://learn.microsoft.com/en-us/windows/win32/direct3d12/direct3d-12-graphics).
+* [The official API documentation](https://learn.microsoft.com/en-us/windows/win32/direct3d12/direct3d-12-graphics).
+* [The specification](https://microsoft.github.io/DirectX-Specs/).
 * [Microsoft's samples](https://github.com/microsoft/DirectX-Graphics-Samples).
 * [*A Gentle Introduction to D3D12*](https://alextardif.com/DX12Tutorial.html) by Alex Tardif.
 * [*DX12 Do's And Don'ts*](https://developer.nvidia.com/dx12-dos-and-donts) by Nvidia.
 
 Vulkan:
-* [*The specification*](https://registry.khronos.org/vulkan/specs/1.1/html/vkspec.html).
+* [The specification](https://registry.khronos.org/vulkan/specs/1.1/html/vkspec.html).
 * [*How to Learn Vulkan*](https://www.jeremyong.com/c++/vulkan/graphics/rendering/2018/03/26/how-to-learn-vulkan/) by Jeremy Ong.
 * [*Vulkan in 30 minutes*](https://renderdoc.org/vulkan-in-30-minutes.html) by baldurk.
 * [*API without Secrets: Introduction to Vulkan*](https://www.intel.com/content/www/us/en/developer/articles/training/api-without-secrets-introduction-to-vulkan-preface.html) by Pawel Lapinski.
