@@ -100,35 +100,34 @@ The [*Foundations of Game Engine Development*](https://foundationsofgameenginede
 
 Rendering is one of the most important parts of an engine. There are often specialized roles for rendering, as opposed to generalist engine programmers. However, even as a generalist, you need to know the basics.
 
-Jeremy Ong gives advice on [how to learn graphics programming](https://twitter.com/m_ninepoints/status/1215429886715629569).
+Different people give advice about learning graphics programming:
+* [Alex Tardif](https://alextardif.com/LearningGraphics.html).
+* [Jeremy Ong](https://twitter.com/m_ninepoints/status/1215429886715629569).
 
-Cem Yuksel's video lectures are general introductions: [*Introduction to Computer Graphics*](https://www.youtube.com/playlist?list=PLplnkTzzqsZTfYh4UbhLGpI5kGd5oW_Hh) and [*Interactive Computer Graphics*](https://www.youtube.com/playlist?list=PLplnkTzzqsZS3R5DjmCQsqupu43oS9CFN).
+Broad introductory resources:
+* [*Learn OpenGL*](https://learnopengl.com/) by Joey de Vries.
+* [*Foundations of Game Engine Development, Volume 2: Rendering*](https://foundationsofgameenginedev.com/) by Eric Lengyel. It assumes you can already use some graphics API.
+* Cem Yuksel's video lectures: [*Introduction to Computer Graphics*](https://www.youtube.com/playlist?list=PLplnkTzzqsZTfYh4UbhLGpI5kGd5oW_Hh) and [*Interactive Computer Graphics*](https://www.youtube.com/playlist?list=PLplnkTzzqsZS3R5DjmCQsqupu43oS9CFN). Uses OpenGL.
 
-For a text, [*Learning Modern 3D Graphics Programming*](https://paroj.github.io/gltut/) introduces graphics using OpenGL.
+Resources for path tracing, useful to learn how rendering works by doing it all in software, without using the GPU:
+* [*Ray Tracing in One Weekend*](https://raytracing.github.io/) by Peter Shirley is a short introduction.
+* [*Physically Based Rendering: From Theory to Implementation*](https://www.pbrt.org/) by Matt Pharr, Wenzel Jakob, and Greg Humphreys. It is much more complete.
 
-[*A trip through the Graphics Pipeline*](https://fgiesen.wordpress.com/2011/07/09/a-trip-through-the-graphics-pipeline-2011-index/) by Fabian Giesen gives an overview of the steps taking place in the GPU when rendering.
-
-A reference that covers a lot of topics is [*Real-Time Rendering*](https://www.realtimerendering.com/) by Tomas Akenine-Möller, Eric Haines, Naty Hoffman, Angelo Pesce, Michał Iwanicki, and Sébastien Hillaire. This itself contains many references to resources for the various presented techniques.
-
-The [*Ray Tracing in One Weekend*](https://raytracing.github.io/) book series by Peter Shirley is a short introduction to ray tracing. This is not on GPU, but the principles are useful for real-time rendering as well.
-
-A much more complete path tracer is explored in [*Physically Based Rendering: From Theory to Implementation*](https://www.pbrt.org/) by Matt Pharr, Wenzel Jakob, and Greg Humphreys. It covers the theory of physically based rendering and also demonstrates an implementation.
+A general reference that covers a lot of topics is [*Real-Time Rendering*](https://www.realtimerendering.com/) by Tomas Akenine-Möller, Eric Haines, Naty Hoffman, Angelo Pesce, Michał Iwanicki, and Sébastien Hillaire. This itself contains many references to resources for the various presented techniques.
 
 [Inigo Quilez's web site](https://iquilezles.org/) contains rendering tutorials. He also co-created [Shadertoy](https://www.shadertoy.com/), where people share their shaders.
 
-To use the GPU, you need to go through a graphics API. Direct3D 11 is easy to start with. Direct3D 12 and Vulkan are more complex but they are what modern engines use. Below are resources for these APIs.
+[*A trip through the Graphics Pipeline*](https://fgiesen.wordpress.com/2011/07/09/a-trip-through-the-graphics-pipeline-2011-index/) by Fabian Giesen gives an overview of the steps taking place in the GPU when rendering.
+
+To use the GPU, you need to go through a graphics API. OpenGL and Direct3D 11 are the easiest to start with. Their successors, Vulkan and Direct3D 12, are more complex, but these are what modern engines use because they allow building multiple command buffers in parallel with multriple threads. Below are resources for these APIs.
+
+OpenGL:
+* [*Learn OpenGL*](https://learnopengl.com/) by Joey de Vries.
 
 Direct3D 11:
 * [The official documentation](https://learn.microsoft.com/en-us/windows/win32/direct3d11/atoc-dx-graphics-direct3d-11).
 * d7samurai's samples: [part 1](https://gist.github.com/d7samurai/261c69490cce0620d0bfc93003cd1052), [2](https://gist.github.com/d7samurai/aee35fd5d132c51e8b0a78699cbaa1e4) and [3](https://gist.github.com/d7samurai/abab8a580d0298cb2f34a44eec41d39d).
-* [Mārtiņš Možeiko's sample](https://gist.github.com/mmozeiko/5e727f845db182d468a34d524508ad5f).
-
-Direct3D 12:
-* [The official API documentation](https://learn.microsoft.com/en-us/windows/win32/direct3d12/direct3d-12-graphics).
-* [The specification](https://microsoft.github.io/DirectX-Specs/).
-* [Microsoft's samples](https://github.com/microsoft/DirectX-Graphics-Samples).
-* [*A Gentle Introduction to D3D12*](https://alextardif.com/DX12Tutorial.html) by Alex Tardif.
-* [*DX12 Do's And Don'ts*](https://developer.nvidia.com/dx12-dos-and-donts) by Nvidia.
+* [Mārtiņš Možeiko's sample in C](https://gist.github.com/mmozeiko/5e727f845db182d468a34d524508ad5f).
 
 Vulkan:
 * [The specification](https://registry.khronos.org/vulkan/specs/1.1/html/vkspec.html).
@@ -138,6 +137,13 @@ Vulkan:
 * [*Vulkan Tutorial*](https://vulkan-tutorial.com/) by Alexander Overvoorde.
 * [Vulkan C++ examples and demos](https://github.com/SaschaWillems/Vulkan) by Sascha Willems.
 * *Vulkan Synchronization Primer*, [part 1](https://www.jeremyong.com/vulkan/graphics/rendering/2018/11/22/vulkan-synchronization-primer/) and [2](https://www.jeremyong.com/vulkan/graphics/rendering/2018/11/23/vulkan-synchonization-primer-part-ii/) by Jeremy Ong.
+
+Direct3D 12:
+* [The official API documentation](https://learn.microsoft.com/en-us/windows/win32/direct3d12/direct3d-12-graphics).
+* [The specification](https://microsoft.github.io/DirectX-Specs/).
+* [Microsoft's samples](https://github.com/microsoft/DirectX-Graphics-Samples).
+* [*A Gentle Introduction to D3D12*](https://alextardif.com/DX12Tutorial.html) by Alex Tardif.
+* [*DX12 Do's And Don'ts*](https://developer.nvidia.com/dx12-dos-and-donts) by Nvidia.
 
 ## Physics
 
