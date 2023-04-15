@@ -142,8 +142,10 @@ Direct3D 12:
 * [The official API documentation](https://learn.microsoft.com/en-us/windows/win32/direct3d12/direct3d-12-graphics).
 * [The specification](https://microsoft.github.io/DirectX-Specs/).
 * [Microsoft's samples](https://github.com/microsoft/DirectX-Graphics-Samples).
-* [*A Gentle Introduction to D3D12*](https://alextardif.com/DX12Tutorial.html) by Alex Tardif.
 * [*DX12 Do's And Don'ts*](https://developer.nvidia.com/dx12-dos-and-donts) by Nvidia.
+* [*Learning D3D12*](https://www.jendrikillner.com/post/d3d12-learning-plan/) by Jendrik Illner.
+* [*A Gentle Introduction to D3D12*](https://alextardif.com/DX12Tutorial.html) by Alex Tardif.
+* [*Raw DirectX 12*](https://alain.xyz/blog/raw-directx12) by Alain Galvan.
 
 ## Physics
 
