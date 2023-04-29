@@ -107,7 +107,7 @@ Different people give advice about learning graphics programming:
 Broad introductory resources:
 * [*Learn OpenGL*](https://learnopengl.com/) by Joey de Vries.
 * [*Foundations of Game Engine Development, Volume 2: Rendering*](https://foundationsofgameenginedev.com/) by Eric Lengyel. It assumes you can already use some graphics API.
-* Cem Yuksel's video lectures: [*Introduction to Computer Graphics*](https://www.youtube.com/playlist?list=PLplnkTzzqsZTfYh4UbhLGpI5kGd5oW_Hh) and [*Interactive Computer Graphics*](https://www.youtube.com/playlist?list=PLplnkTzzqsZS3R5DjmCQsqupu43oS9CFN). Uses OpenGL.
+* Cem Yuksel's video lectures: [*Introduction to Computer Graphics*](https://www.youtube.com/playlist?list=PLplnkTzzqsZTfYh4UbhLGpI5kGd5oW_Hh) and [*Interactive Computer Graphics*](https://www.youtube.com/playlist?list=PLplnkTzzqsZS3R5DjmCQsqupu43oS9CFN).
 
 Resources for path tracing, useful to learn how rendering works by doing it all in software, without using the GPU:
 * [*Ray Tracing in One Weekend*](https://raytracing.github.io/) by Peter Shirley is a short introduction.
@@ -116,8 +116,6 @@ Resources for path tracing, useful to learn how rendering works by doing it all 
 A general reference that covers a lot of topics is [*Real-Time Rendering*](https://www.realtimerendering.com/) by Tomas Akenine-Möller, Eric Haines, Naty Hoffman, Angelo Pesce, Michał Iwanicki, and Sébastien Hillaire. This itself contains many references to resources for the various presented techniques.
 
 [Inigo Quilez's web site](https://iquilezles.org/) contains rendering tutorials. He also co-created [Shadertoy](https://www.shadertoy.com/), where people share their shaders.
-
-[*A trip through the Graphics Pipeline*](https://fgiesen.wordpress.com/2011/07/09/a-trip-through-the-graphics-pipeline-2011-index/) by Fabian Giesen gives an overview of the steps taking place in the GPU when rendering.
 
 To use the GPU, you need to go through a graphics API. OpenGL and Direct3D 11 are the easiest to start with. Their successors, Vulkan and Direct3D 12, are more complex, but these are what modern engines use because they allow building multiple command buffers in parallel with multriple threads. Below are resources for these APIs.
 
@@ -145,7 +143,11 @@ Direct3D 12:
 * [*DX12 Do's And Don'ts*](https://developer.nvidia.com/dx12-dos-and-donts) by Nvidia.
 * [*Learning D3D12*](https://www.jendrikillner.com/post/d3d12-learning-plan/) by Jendrik Illner.
 * [*A Gentle Introduction to D3D12*](https://alextardif.com/DX12Tutorial.html) by Alex Tardif.
-* [*Raw DirectX 12*](https://alain.xyz/blog/raw-directx12) by Alain Galvan.
+* [*GPU Memory Pools in D3D12*](https://therealmjp.github.io/posts/gpu-memory-pool/) by Matt Pettineo.
+
+To understand the abstractions provided by the graphics APIs and use them most effectively, it helps to also learn about how GPUs work:
+* [*A trip through the Graphics Pipeline*](https://fgiesen.wordpress.com/2011/07/09/a-trip-through-the-graphics-pipeline-2011-index/) by Fabian Giesen.
+* [*Breaking Down Barriers*](https://therealmjp.github.io/posts/breaking-down-barriers-part-1-whats-a-barrier/) by Matt Pettineo.
 
 ## Physics
 
