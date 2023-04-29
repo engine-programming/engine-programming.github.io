@@ -151,9 +151,13 @@ To understand the abstractions provided by the graphics APIs and use them most e
 
 ## Physics
 
-[*Game Physics*](https://gafferongames.com/post/integration_basics/) by Glenn Fiedler is a series of easy articles introducing physics for games.
+Dynamics:
+* [*Game Physics*](https://gafferongames.com/post/integration_basics/) by Glenn Fiedler.
+* [*Rigid Body Dynamics*](https://www.chrishecker.com/Rigid_Body_Dynamics) by Chris Hecker.
+* [*Physics References: An Annotated Bibliography for Rigid Body Dynamics*](https://www.chrishecker.com/Physics_References) by Chris Hecker.
 
-[*Real-Time Collision Detection*](https://realtimecollisiondetection.net/) by Christer Ericson covers the data structures and algorithms used for collision detection.
+Collision detection:
+* [*Real-Time Collision Detection*](https://realtimecollisiondetection.net/) by Christer Ericson.
 
 ## Networking
 
