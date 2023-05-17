@@ -48,19 +48,15 @@ Engine programming requires a good understanding of how computers work in order 
 
 ## Basics
 
-The [*Performance-Aware Programming* Series](https://www.computerenhance.com/p/welcome-to-the-performance-aware) by Casey Muratori teaches everything that you really need to know well.
+The [*Performance-Aware Programming* Series](https://www.computerenhance.com/p/welcome-to-the-performance-aware) by Casey Muratori teaches everything that you really need to know well. The course materials are currently in production, with a weekly release schedule.
 
 For a book, [*Computer Systems: A Programmer's Perspective*](http://csapp.cs.cmu.edu/) by Randal E. Bryant and David R. O'Hallaron. It has a slightly broader scope, introducing topics in operating systems, networking, and systems programming on Linux. Most engine programming is done on Windows, but the concepts covered in the book are fundamental enough to carry over. However, it does requires Linux for doing the labs.
 
 [*Algorithms for Modern Hardware*](https://en.algorithmica.org/hpc/) by Sergey Slotin is not finished, so it currently doesn't cover as many topics with the same depth, but can be useful nontheless.
 
-Online reference for intrinsics: [Intel Intrinsics Guide](https://www.intel.com/content/www/us/en/docs/intrinsics-guide/index.html).
-
-Online tool to see the floating point representation of a number: [Float Exposed](https://float.exposed/).
-
-## Advanced
-
-Knowing the basics well is enough as a beginning generalist engine programmer. But if you want to specialize in optimization, *Computer Architecture: A Quantitative Approach* by John L. Hennessy and David A. Patterson gives a lot more details about the way hardware works.
+Miscellaneous useful links:
+* Online reference for intrinsics: [Intel Intrinsics Guide](https://www.intel.com/content/www/us/en/docs/intrinsics-guide/index.html).
+* Online tool to see the floating point representation of a number: [Float Exposed](https://float.exposed/).
 
 ## Assembly
 
@@ -74,9 +70,9 @@ The [*Applied Reverse Engineering*](https://revers.engineering/applied-reverse-e
 
 The book [*Reverse Engineering for Beginners*](https://beginners.re/) by Dennis Yurichev is more complete.
 
-Online reference for x86 instructions: [www.felixcloutier.com/x86/](https://www.felixcloutier.com/x86/).
-
-Online reference for the performance characteristics of x86 instructions: [uops.info](https://uops.info/).
+Online references:
+* x86 instructions: [www.felixcloutier.com/x86/](https://www.felixcloutier.com/x86/).
+* Performance characteristics of x86 instructions: [uops.info](https://uops.info/).
 
 ## Data-Oriented Design
 
@@ -84,7 +80,12 @@ A programming approach often adopted in engine programming is known as data-orie
 * [*Efficiency with Algorithms, Performance with Data Structures*](https://www.youtube.com/watch?v=fHNmRkzxHWs) by Chandler Carruth.
 * [*Optimizable Code*](https://deplinenoise.wordpress.com/2013/12/28/optimizable-code/) by Andreas Fredriksson.
 * [*Data-Oriented Design and C++*](https://www.youtube.com/watch?v=rX0ItVEVjHc) by Mike Acton.
-* [*Practical Optimizations*](https://www.youtube.com/watch?v=NAVbI1HIzCE) by Jason Booth.
+
+## Advanced
+
+Knowing the basics well is enough as a beginning generalist engine programmer. But if you want to specialize in optimization, *Computer Architecture: A Quantitative Approach* by John L. Hennessy and David A. Patterson gives a lot more details about the way hardware works.
+
+Agner Fog wrote several advanced [*optimization manuals*](https://www.agner.org/optimize/#manuals).
 
 # 5. Engine Programming
 
