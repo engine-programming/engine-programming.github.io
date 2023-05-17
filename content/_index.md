@@ -95,7 +95,7 @@ Finally, we have enough fundamental knowledge and we now turn to engines. But no
 
 [*Game Engine Architecture*](https://www.gameenginebook.com/) by Jason Gregory gives a broad overview of how engines are organized. It will make you familiar with the different parts of a typical engine.
 
-The [*Foundations of Game Engine Development*](https://foundationsofgameenginedev.com/) series by Eric Lengyel is not finished yet, two books are currently available. It introduces fundamental topics rather than architecture, and it does so in a lot of detail, enabling you to make proper implementations. If you find the math of volume 1 not introductory enough, refer to the math appendix of this guide for more complete resources.
+The [*Foundations of Game Engine Development*](https://foundationsofgameenginedev.com/) series by Eric Lengyel introduces fundamental topics rather than architecture, and it does so in a lot of detail, enabling you to make proper implementations. The series is not finished yet, two books are currently available. If you find the math of volume 1 not introductory enough, refer to the math appendix of this guide for more complete resources.
 
 ## Rendering
 
@@ -110,13 +110,13 @@ Broad introductory resources:
 * [*Foundations of Game Engine Development, Volume 2: Rendering*](https://foundationsofgameenginedev.com/) by Eric Lengyel. It assumes you can already use some graphics API.
 * Cem Yuksel's video lectures: [*Introduction to Computer Graphics*](https://www.youtube.com/playlist?list=PLplnkTzzqsZTfYh4UbhLGpI5kGd5oW_Hh) and [*Interactive Computer Graphics*](https://www.youtube.com/playlist?list=PLplnkTzzqsZS3R5DjmCQsqupu43oS9CFN).
 
+A general reference that covers a lot of topics is [*Real-Time Rendering*](https://www.realtimerendering.com/) by Tomas Akenine-Möller, Eric Haines, Naty Hoffman, Angelo Pesce, Michał Iwanicki, and Sébastien Hillaire. This itself contains many references to resources for the various presented techniques.
+
 Resources for path tracing, useful to learn how rendering works by doing it all in software, without using the GPU:
 * [*Ray Tracing in One Weekend*](https://raytracing.github.io/) by Peter Shirley is a short introduction.
 * [*Physically Based Rendering: From Theory to Implementation*](https://www.pbrt.org/) by Matt Pharr, Wenzel Jakob, and Greg Humphreys. It is much more complete.
 
-A general reference that covers a lot of topics is [*Real-Time Rendering*](https://www.realtimerendering.com/) by Tomas Akenine-Möller, Eric Haines, Naty Hoffman, Angelo Pesce, Michał Iwanicki, and Sébastien Hillaire. This itself contains many references to resources for the various presented techniques.
-
-[Inigo Quilez's web site](https://iquilezles.org/) contains rendering tutorials. He also co-created [Shadertoy](https://www.shadertoy.com/), where people share their shaders.
+[Inigo Quilez's web site](https://iquilezles.org/) contains some rendering tutorials. He also co-created [Shadertoy](https://www.shadertoy.com/), where people share their shaders.
 
 To use the GPU, you need to go through a graphics API. OpenGL and Direct3D 11 are the easiest to start with. Their successors, Vulkan and Direct3D 12, are more complex, but these are what modern engines use because they allow building multiple command buffers in parallel with multriple threads. Below are resources for these APIs.
 
