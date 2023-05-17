@@ -87,7 +87,7 @@ Knowing the basics well is enough as a beginning generalist engine programmer. B
 
 Agner Fog wrote several advanced [*optimization manuals*](https://www.agner.org/optimize/#manuals).
 
-# 4. Math
+# 5. Math
 
 Some parts of an engine can require a lot of math, such as rendering and physics. The most important fields are trigonometry, calculus, and linear algebra. Only resources at a level above high-school math are listed here.
 
@@ -107,7 +107,7 @@ Rigorous linear algebra:
 * [*Linear Algebra Done Right*](https://linear.axler.net/) by Sheldon Axler.
 * [*Linear Algebra Done Wrong*](https://www.math.brown.edu/streil/papers/LADW/LADW.html) by Sergei Treil.
 
-# 5. Engine Programming
+# 6. Engine Programming
 
 Finally, we have enough fundamental knowledge and we now turn to engines. But note that you do not need to finish learning all the fundamentals before starting to learn about engines.
 
@@ -208,7 +208,7 @@ Engines usually use few libraries. However, there are notable ones known to be c
 * [stb](https://github.com/nothings/stb).
 * [EASTL](https://github.com/electronicarts/EASTL).
 
-# 6. Starting on Your First Job
+# 7. Starting on Your First Job
 
 You do not need to know everything about engines to start working as an engine programmer.
 And when you start, you will then be learning even more on the job.
@@ -227,12 +227,12 @@ An engine can be a very large program, and learning your way around your company
 
 **Q**: How were the resources listed here chosen?
 
-**A**: I used many (but not all) of the resources myself. Some have been recommended by other people, in which case I at least take a look to check if they are relevant and if they meet basic quality standards.
+**A**: I used many of the resources myself when learning. Some have been recommended by other people, in which case I check that they are relevant, that they meet quality standards, and that they fill an obvious gap. I avoid adding many redundant resources, if I find a better one I replace the previous one.
 
 **Q**: Is engine programming right for me?
 
-**A**: If you just want to make games, use an existing engine such as Unreal or Unity. On the other hand, people drawn to making engines are in it for the pleasure of low-level programming, of knowing how everything works and of doing things themselves. You may find the resources listed here useful even if you do not plan on becoming an engine programmer.
+**A**: If you just want to make games, use an existing engine such as Unreal or Unity. On the other hand, people drawn to making engines are in it for the pleasure of low-level programming, of knowing how everything works, and of doing things themselves. You may find the resources listed here useful even if you do not plan on becoming an engine programmer.
 
 **Q**: Who wrote this page?
 
-**A**: I'm Radek Jurga, I work as an engine programmer. I studied physics and then learned programming on my own, using many of the resources listed above. I wrote this primarily for a friend who I am mentoring, he is a physician in the process of changing career to also become an engine programmer, goal toward which he is making excellent progress. I hope that other people will find the page useful too.
+**A**: I'm Radek Jurga, I work as an engine programmer. I studied physics and then learned programming on my own, using many of the resources listed above. I wrote this primarily for a friend who I am mentoring, he is a physician in the process of changing career to also become an engine programmer, goal toward which he is making excellent progress. This page is online in the hope that other people will find it useful too.
