@@ -54,7 +54,7 @@ For a book, [*Computer Systems: A Programmer's Perspective*](http://csapp.cs.cmu
 
 [*Algorithms for Modern Hardware*](https://en.algorithmica.org/hpc/) by Sergey Slotin is not finished, so it currently doesn't cover as many topics with the same depth, but can be useful nontheless.
 
-Miscellaneous useful links:
+Misc useful links:
 * Online reference for intrinsics: [Intel Intrinsics Guide](https://www.intel.com/content/www/us/en/docs/intrinsics-guide/index.html).
 * Online tool to see the floating point representation of a number: [Float Exposed](https://float.exposed/).
 
@@ -152,13 +152,24 @@ To understand the abstractions provided by the graphics APIs and use them most e
 
 ## Physics
 
-Dynamics:
+The most relevant field of physics for games is classical Newtonian mechanics, in particular rigid-body dynamics. Optics can be useful for understanding rendering techniques, but resources are not provided here.
+
+Chris Hecker has a list of resources: [*Physics References: An Annotated Bibliography for Rigid Body Dynamics*](https://www.chrishecker.com/Physics_References).
+
+Introduction to dynamics:
 * [*Game Physics*](https://gafferongames.com/post/integration_basics/) by Glenn Fiedler.
 * [*Rigid Body Dynamics*](https://www.chrishecker.com/Rigid_Body_Dynamics) by Chris Hecker.
-* [*Physics References: An Annotated Bibliography for Rigid Body Dynamics*](https://www.chrishecker.com/Physics_References) by Chris Hecker.
+
+In-depth dynamics:
+* [*An Introduction to Physically Based Modeling*](http://www.cs.cmu.edu/afs/cs/user/baraff/www/pbm/pbm.html) by Andrew Witkin, David Baraff, and Michael Kass.
+* *Dynamic Simulations of Multibody Systems* by Murilo G. Coutinho.
 
 Collision detection:
 * [*Real-Time Collision Detection*](https://realtimecollisiondetection.net/) by Christer Ericson.
+
+General introductory physics resources, not meant specifically for games or simulations, but with high quality explanations:
+* [*The Feynman Lectures on Physics, Volume I*](https://www.feynmanlectures.caltech.edu/I_toc.html) by Feynman, Leighton, and Sands.
+* [*Fundamentals of Physics I*](https://oyc.yale.edu/physics/phys-200) by Ramamurti Shankar. Also [on YouTube](https://www.youtube.com/playlist?list=PLFE3074A4CB751B2B).
 
 ## Networking
 
@@ -206,14 +217,7 @@ Rigorous linear algebra:
 * [*Linear Algebra Done Right*](https://linear.axler.net/) by Sheldon Axler.
 * [*Linear Algebra Done Wrong*](https://www.math.brown.edu/streil/papers/LADW/LADW.html) by Sergei Treil.
 
-## B. Physics
-
-The most relevant field for games is classical Newtonian mechanics. Optics can be useful for understanding rendering techniques.
-
-* [*Fundamentals of Physics I*](https://oyc.yale.edu/physics/phys-200) by Ramamurti Shankar. Also [on YouTube](https://www.youtube.com/playlist?list=PLFE3074A4CB751B2B).
-* [*The Feynman Lectures on Physics, Volume I*](https://www.feynmanlectures.caltech.edu/I_toc.html) by Feynman, Leighton, and Sands.
-
-## C. Misc links
+## B. Misc links
 
 * [*Teach Yourself Programming in Ten Years*](http://norvig.com/21-days.html) by Peter Norvig, general advice about learning programming.
 * [*Teach Yourself Computer Science*](https://teachyourselfcs.com/) by Oz Nova and Myles Byrne: a more general list of resources for self-learning computer science.
