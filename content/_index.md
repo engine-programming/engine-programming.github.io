@@ -202,7 +202,7 @@ Glenn Fiedler wrote many articles about networking in different series.
 
 ## Libraries
 
-Engines usually use few libraries. However, there are notable ones known to be commonly used. They satisfy requirements such as ease of integration, ease of debugging, good performance, ...
+There are notable libraries known to be used by some engines. They satisfy requirements such as ease of integration, ease of debugging, good performance, ...
 
 * [Dear ImGui](https://www.dearimgui.org/).
 * [stb](https://github.com/nothings/stb).
