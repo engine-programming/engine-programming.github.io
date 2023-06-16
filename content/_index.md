@@ -4,42 +4,46 @@ date = 2022-08-25T21:30:04+08:00
 draft = false
 +++
 
-This is a list of self-learning resources for game engine programming. It is not exhaustive, there are many more things to learn, but it will get you started.
+This is a list of self-learning resources for game engine programming. It is not exhaustive, there are many more things to learn, but it will get you started. The content is organized sequentially, but the order is not strict, feel free to jump around.
 
 # 1. Programming Basics
 
 Engines are mostly written in C++ because it maps somewhat directly to how the CPU works, which allows to achieve high performance.
 
-The [*Handmade Hero*](https://handmadehero.org/) video series by Casey Muratori shows how to make an engine from scratch in C, which is a subset of C++. However, Handmade Hero's intro to C is brief and likely insufficient if you do not already have enough programming experience. If that is your case, complement it with other resources.
+* [*Handmade Hero*](https://handmadehero.org/) by Casey Muratori shows how to make an engine in C, which is a subset of C++. It has no prerequisites, but the intro to C might feel insufficient if you do not already have some programming experience.
 
-Stack Overflow has a [list of C++ books](https://stackoverflow.com/questions/388242/the-definitive-c-book-guide-and-list), including two introductory ones. Of these, *C++ Primer* is appropriate if you already programmed before, and *Programming: Principles and Practice Using C++* if you never did.
+* [*The Definitive C++ Book Guide and List*](https://stackoverflow.com/questions/388242/the-definitive-c-book-guide-and-list) on Stack Overflow recommends the following books for beginners:
+  * *C++ Primer* by Stanley Lippman, Josée Lajoie, and Barbara E. Moo.
+  * *Programming: Principles and Practice Using C++* by Bjarne Stroustrup. Preferable to *C++ Primer* if you do not have any kind of programming experience at all.
 
-When you need to quickly look something up, an online reference for C and C++ is [cppreference.com](https://en.cppreference.com/). If you prefer something written in a more informal style and that is easier to read, [*The C++ Programming Language*](https://www.stroustrup.com/4th.html) by Bjarne Stroustrup.
+* Online reference: [cppreference.com](https://en.cppreference.com/).
 
 # 2. Programming Best Practices
 
-C++ is a huge language with many parts and features that can be used in many different ways. Engine programmers often only use some parts of the language, and only in some ways.
+* [*The Rules of Programming: How to Write Better Code*](https://www.oreilly.com/library/view/the-rules-of/9781098133108/) by Chris Zimmerman explains the programming practices used at Sucker Punch where they make their own engine. It is one of the most beneficial books you can read as a beginner. Although the examples are in C++, the focus is not on the language itself but on general programming practices.
 
-[*The Rules of Programming: How to Write Better Code*](https://www.oreilly.com/library/view/the-rules-of/9781098133108/) by Chris Zimmerman explains the programming practices used at the video game studio Sucker Punch Productions where they make their own engine.
+C++ is a huge language with many parts and features that can be used (and misused) in many different ways. The programming styles in Handmade Hero and in general C++ books are very different. Handmade Hero teaches low-level C-style code, whereas general C++ books teach more abstract paradigms such as object-oriented programming. Some programmers have very strong opinions about the right way to do things. Engine programmers tend toward low-level code. However, you will likely encounter all kinds of code through your career. It is important to know common C++ idioms and to understand their strengths and weaknesses.
 
-Additional examples of practices sometimes followed:
+* *Effective C++* and *Effective Modern C++* by Scott Meyers cover standard C++ practices that are widespread in objet-oriented codebases.
+
+Further resources:
+
 * [John Carmack on Inlined Code](http://number-none.com/blow/john_carmack_on_inlined_code.html).
 * [John Carmack on Functional Programming in C++](http://www.sevangelatos.com/john-carmack-on/).
-
-On the other hand, here are examples of C++ features and practices that are sometimes avoided, with links to typical justifications:
-* Object-oriented features such as virtual functions: [*"Clean" Code, Horrible Performance*](https://www.computerenhance.com/p/clean-code-horrible-performance) by Casey Muratori.
-* The STL: [Twitter thread](https://twitter.com/m_ninepoints/status/1497768472184430600) by Jeremy Ong. Many engines use their own replacement of the STL, such as the [Electronics Arts Standard Template Library](https://github.com/electronicarts/EASTL) whose documentation contains [justifications](https://github.com/electronicarts/EASTL/blob/master/doc/FAQ.md#info6-why-is-there-eastl-when-there-is-the-stl).
-* Exceptions: [Hacker News comment](https://news.ycombinator.com/item?id=28164247) by Walter Bright.
+* [*"Clean" Code, Horrible Performance*](https://www.computerenhance.com/p/clean-code-horrible-performance) by Casey Muratori on object-oriented features such as virtual functions.
+* [Jeremy Ong on the STL](https://twitter.com/m_ninepoints/status/1497768472184430600). Many engines use their own replacement of the STL, such as the [Electronics Arts Standard Template Library](https://github.com/electronicarts/EASTL) whose documentation contains [justifications](https://github.com/electronicarts/EASTL/blob/master/doc/FAQ.md#info6-why-is-there-eastl-when-there-is-the-stl).
+* [Walter Bright on exceptions](https://news.ycombinator.com/item?id=28164247).
 
 # 3. Algorithms and Data Structures
 
 Algorithms and data structures are fundamental to solving problems with code. They are used everywhere in engines. You need to know their characteristics.
 
-A book that uses C to teach them is [*The Algorithm Design Manual*](https://www.algorist.com/) by Steven Skiena.
+* [*The Algorithm Design Manual*](https://www.algorist.com/) by Steven Skiena uses C to teach them.
 
-A website with fun exercises to practice is [*Advent of Code*](https://adventofcode.com/).
+Further resources:
 
-Further reading:
+* *Hacker's Delight* by Henry S. Warren, Jr. is about bit manipulation tricks.
+* [*Advent of Code*](https://adventofcode.com/) is a website with fun exercises to practice.
 * [*I've been writing ring buffers wrong all these years*](https://www.snellman.net/blog/archive/2016-12-13-ring-buffers/) by Juho Snellman.
 
 # 4. Computer Architecture and Performance
