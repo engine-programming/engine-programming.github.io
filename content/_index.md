@@ -20,7 +20,7 @@ Engines are mostly written in C++ because it maps somewhat directly to how the C
 
 # 2. Programming Best Practices
 
-* [*The Rules of Programming: How to Write Better Code*](https://www.oreilly.com/library/view/the-rules-of/9781098133108/) by Chris Zimmerman explains the programming practices used at Sucker Punch where they make their own engine. It is one of the most beneficial books you can read as a beginner. Although the examples are in C++, the focus is not on the language itself but on general programming practices.
+* [*The Rules of Programming: How to Write Better Code*](https://www.therulesofprogramming.com/) by Chris Zimmerman explains the programming practices used at Sucker Punch where they make their own engine. It is one of the most beneficial books you can read as a beginner. Although the examples are in C++, the focus is not on the language itself but on general programming practices.
 
 C++ is a huge language with many parts and features that can be used (and misused) in many different ways. The programming styles in Handmade Hero and in general C++ books are very different. Handmade Hero teaches low-level C-style code, whereas general C++ books teach more abstract paradigms such as object-oriented programming. Some programmers have very strong opinions about the right way to do things. Engine programmers tend toward low-level code. However, you will likely encounter all kinds of code through your career. It is important to know common C++ idioms and to understand their strengths and weaknesses.
 
@@ -111,6 +111,9 @@ Rigorous linear algebra:
 * [*Linear Algebra Done Right*](https://linear.axler.net/) by Sheldon Axler.
 * [*Linear Algebra Done Wrong*](https://www.math.brown.edu/streil/papers/LADW/LADW.html) by Sergei Treil.
 
+Numerical algorithms:
+* [*Numerical Recipes: The Art of Scientific Computing*](http://numerical.recipes/) by William H. Press, Saul A. Teukolsky, William T. Vetterling and Brian P. Flannery.
+
 # 6. Engine Programming
 
 Finally, we have enough fundamental knowledge and we now turn to engines. But note that you do not need to finish learning all the fundamentals before starting to learn about engines.
@@ -149,6 +152,7 @@ OpenGL:
 
 Direct3D 11:
 * [The official documentation](https://learn.microsoft.com/en-us/windows/win32/direct3d11/atoc-dx-graphics-direct3d-11).
+* *Practical Rendering & Computation with Direct3D 11* by Jason Zink, Matt Pettineo and Jack Hoxley.
 * d7samurai's samples: [part 1](https://gist.github.com/d7samurai/261c69490cce0620d0bfc93003cd1052), [2](https://gist.github.com/d7samurai/aee35fd5d132c51e8b0a78699cbaa1e4) and [3](https://gist.github.com/d7samurai/abab8a580d0298cb2f34a44eec41d39d).
 * [Mārtiņš Možeiko's sample in C](https://gist.github.com/mmozeiko/5e727f845db182d468a34d524508ad5f).
 
@@ -166,7 +170,6 @@ Direct3D 12:
 * [The specification](https://microsoft.github.io/DirectX-Specs/).
 * [Microsoft's samples](https://github.com/microsoft/DirectX-Graphics-Samples).
 * [*DX12 Do's And Don'ts*](https://developer.nvidia.com/dx12-dos-and-donts) by Nvidia.
-* [*Learning D3D12*](https://www.jendrikillner.com/post/d3d12-learning-plan/) by Jendrik Illner.
 * [*A Gentle Introduction to D3D12*](https://alextardif.com/DX12Tutorial.html) by Alex Tardif.
 * [*GPU Memory Pools in D3D12*](https://therealmjp.github.io/posts/gpu-memory-pool/) by Matt Pettineo.
 
