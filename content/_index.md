@@ -236,4 +236,4 @@ An engine can be a very large program, and learning your way around your company
 
 **Q**: Who wrote this page?
 
-**A**: I'm Radek Jurga, I work as an engine programmer. I studied physics at univeristy, and learned programming on my own, using many of the resources listed above. I initially wrote this page for a friend who I was mentoring. At the time, he was a physician, and using this guide he succesfully changed career to AAA game development. I joined the same studio and we now work together. This page is online in the hope that other people will find it useful too.
+**A**: I'm Radek Jurga, I work as an engine programmer. I studied physics and then learned programming on my own, using many of the resources listed above. I initially wrote this page for a friend who I was mentoring. At the time, he was a physician, and using this guide he succesfully changed career to AAA game development. I joined the same studio and we now work together. This page is online in the hope that other people will find it useful too.
