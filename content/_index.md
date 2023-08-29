@@ -81,6 +81,12 @@ A programming approach often adopted in engine programming is known as data-orie
 * [*Optimizable Code*](https://deplinenoise.wordpress.com/2013/12/28/optimizable-code/) by Andreas Fredriksson.
 * [*Data-Oriented Design and C++*](https://www.youtube.com/watch?v=rX0ItVEVjHc) by Mike Acton.
 
+## Parallel Programming
+
+As CPUs reach increasingly higher core counts, a trend that shows no sign of stopping, parallel programming gains in importance. Engines rely heavily on parallelism.
+
+* [*Is Parallel Programming Hard, And, If So, What Can You Do About It?*](https://mirrors.edge.kernel.org/pub/linux/kernel/people/paulmck/perfbook/perfbook.html) by Paul E. McKenney.
+
 ## Advanced
 
 Knowing the basics well is enough as a beginning generalist engine programmer. Here are resources if you want to further specialize in optimization.
