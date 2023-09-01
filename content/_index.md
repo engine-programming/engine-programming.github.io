@@ -48,52 +48,40 @@ Further resources:
 
 Engine programming requires a good understanding of how computers work in order to achieve the high performance required for real-time interactive games.
 
-## Basics
+These resources cover the basics broadly:
 
 * The [*Performance-Aware Programming* Series](https://www.computerenhance.com/p/welcome-to-the-performance-aware) by Casey Muratori teaches the essentials. It is currently in production, with a weekly release schedule.
+* [*Computer Systems: A Programmer's Perspective*](http://csapp.cs.cmu.edu/) by Randal E. Bryant and David R. O'Hallaron. It has a slightly broader scope. Although most engine programming is done on Windows, the book requires Linux for doing the labs.
 
-* For a book, [*Computer Systems: A Programmer's Perspective*](http://csapp.cs.cmu.edu/) by Randal E. Bryant and David R. O'Hallaron. It has a slightly broader scope, introducing topics in operating systems, networking, and systems programming on Linux. Most engine programming is done on Windows, but the concepts covered in the book are fundamental enough to carry over. However, it does requires Linux for doing the labs.
+The other resources listed below dive deeper into specific topics.
 
-Misc useful links:
-* Online reference for intrinsics: [Intel Intrinsics Guide](https://www.intel.com/content/www/us/en/docs/intrinsics-guide/index.html).
-* Online tool to see the floating point representation of a number: [Float Exposed](https://float.exposed/).
+Assembly, which you do not necessarily need to know how to write, but at least to read in order to verify that the compiler did what you expect with your code:
 
-## Assembly
+* [*Applied Reverse Engineering*](https://revers.engineering/applied-reverse-engineering-series/) by Daax Rynd, although it is still unfinished.
+* [*Reverse Engineering for Beginners*](https://beginners.re/) by Dennis Yurichev goes further.
 
-You do not necessarily need to know how to write assembly yourself, but you need to know how to read it. One of the main uses is to verify that the compiler did what you expect with your code, for example in terms of optimization.
+Data-oriented design, a programming approach that takes advantage of the way that modern CPUs work, in particular with respect to caching:
 
-[Compiler Explorer](https://godbolt.org/) is a tool that lets you see the assembly that various compilers produce from your code snippets. You can learn a lot just by playing with it.
-
-The basic resources listed previously already cover assembly, but more specific resources are listed here.
-
-* [*Applied Reverse Engineering*](https://revers.engineering/applied-reverse-engineering-series/) by Daax Rynd is incomplete, but covers the basics.
-
-* [*Reverse Engineering for Beginners*](https://beginners.re/) by Dennis Yurichev is more complete.
-
-Online references:
-* x86 instructions: [www.felixcloutier.com/x86/](https://www.felixcloutier.com/x86/).
-* Performance characteristics of x86 instructions: [uops.info](https://uops.info/).
-
-## Data-Oriented Design
-
-A programming approach often adopted in engine programming is known as data-oriented design. It aims at increasing performance by organizing programs to take advantage of the way that modern CPUs work, in particular with respect to caching. This approach is introduced in:
 * [*Efficiency with Algorithms, Performance with Data Structures*](https://www.youtube.com/watch?v=fHNmRkzxHWs) by Chandler Carruth.
 * [*Optimizable Code*](https://deplinenoise.wordpress.com/2013/12/28/optimizable-code/) by Andreas Fredriksson.
 * [*Data-Oriented Design and C++*](https://www.youtube.com/watch?v=rX0ItVEVjHc) by Mike Acton.
 
-## Parallel Programming
-
-As CPUs reach increasingly higher core counts, a trend that shows no sign of stopping, parallel programming gains in importance. Engines rely heavily on parallelism.
+Parallel programming, which becomes increasingly important as CPUs get more cores:
 
 * [*Is Parallel Programming Hard, And, If So, What Can You Do About It?*](https://mirrors.edge.kernel.org/pub/linux/kernel/people/paulmck/perfbook/perfbook.html) by Paul E. McKenney.
 
-## Advanced
-
-Knowing the basics well is enough as a beginning generalist engine programmer. Here are resources if you want to further specialize in optimization.
+Advanced resources if you want to further specialize in optimization:
 
 * *Computer Architecture: A Quantitative Approach* by John L. Hennessy and David A. Patterson gives a lot more details about the way hardware works.
-
 * Agner Fog wrote several advanced [*optimization manuals*](https://www.agner.org/optimize/#manuals).
+
+Misc useful links:
+
+* x86 instructions: [www.felixcloutier.com/x86/](https://www.felixcloutier.com/x86/).
+* Performance characteristics of x86 instructions: [uops.info](https://uops.info/).
+* Tool to see the floating point representation of a number: [Float Exposed](https://float.exposed/).
+* [Compiler Explorer](https://godbolt.org/) is a tool that lets you see the assembly that various compilers produce from your code snippets.
+* Online reference for intrinsics: [Intel Intrinsics Guide](https://www.intel.com/content/www/us/en/docs/intrinsics-guide/index.html).
 
 # 5. Math
 
