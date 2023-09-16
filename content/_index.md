@@ -79,9 +79,10 @@ Misc useful links:
 
 * x86 instructions: [www.felixcloutier.com/x86/](https://www.felixcloutier.com/x86/).
 * Performance characteristics of x86 instructions: [uops.info](https://uops.info/).
-* Tool to see the floating point representation of a number: [Float Exposed](https://float.exposed/).
 * [Compiler Explorer](https://godbolt.org/) is a tool that lets you see the assembly that various compilers produce from your code snippets.
 * Online reference for intrinsics: [Intel Intrinsics Guide](https://www.intel.com/content/www/us/en/docs/intrinsics-guide/index.html).
+* [Onboarding floating-point](https://www.altdevarts.com/p/onboarding-floating-point) by Mike Acton explains the basics of the floating-point formats.
+* Tool to see the floating point representation of a number: [Float Exposed](https://float.exposed/).
 
 # 5. Math
 
@@ -211,6 +212,8 @@ And when you start, you will then be learning even more on the job.
 Mike Acton gives his advice to new engine programmers in his talk [*Solving the Right Problems for Engine Programmers*](https://www.youtube.com/watch?v=4B00hV3wmMY).
 
 An engine can be a very large program, and learning your way around your company's engine can be intimiading. Jeremy Ong gives advice in [*Grokking Big Unfamiliar Codebases*](https://www.jeremyong.com/game%20engines/2023/01/25/grokking-big-unfamiliar-codebases/).
+
+Jeremy Ong also gives an overview of the important lenses through which he evaluates engines: [*How I Evaluate Game Engines*](https://www.jeremyong.com/game%20engines/2023/09/15/how-i-evaluate-game-engines/).
 
 # Misc links
 
