@@ -43,6 +43,7 @@ Further resources:
 * *Hacker's Delight* by Henry S. Warren, Jr. is about bit manipulation tricks.
 * [*Advent of Code*](https://adventofcode.com/) is a website with fun exercises to practice.
 * [*I've been writing ring buffers wrong all these years*](https://www.snellman.net/blog/archive/2016-12-13-ring-buffers/) by Juho Snellman.
+* [*More numerical experiments in hashing*](http://www.pvk.ca/Blog/more_numerical_experiments_in_hashing.html) by Paul Khuong, on Robin Hood hashing.
 
 # 4. Computer Architecture and Performance
 
