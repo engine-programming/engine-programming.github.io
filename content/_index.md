@@ -59,7 +59,7 @@ The other resources listed below dive deeper into specific topics.
 Assembly, which you do not necessarily need to know how to write, but at least to read in order to verify that the compiler did what you expect with your code:
 
 * [*Applied Reverse Engineering*](https://revers.engineering/applied-reverse-engineering-series/) by Daax Rynd, although it is still unfinished.
-* [*Reverse Engineering for Beginners*](https://beginners.re/) by Dennis Yurichev goes further.
+* [*Reverse Engineering for Beginners*](https://beginners.re/) by Dennis Yurichev, a more complete book.
 
 Data-oriented design, a programming approach that takes advantage of the way that modern CPUs work, in particular with respect to caching:
 
