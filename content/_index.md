@@ -204,6 +204,7 @@ There are notable libraries known to be used by some engines. They satisfy requi
 * [Dear ImGui](https://www.dearimgui.org/).
 * [stb](https://github.com/nothings/stb).
 * [EASTL](https://github.com/electronicarts/EASTL).
+* [Jolt Physics](https://github.com/jrouwe/JoltPhysics).
 
 # 7. Starting on Your First Job
 
