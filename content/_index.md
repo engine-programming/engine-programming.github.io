@@ -31,6 +31,7 @@ Further resources:
 * [*"Clean" Code, Horrible Performance*](https://www.computerenhance.com/p/clean-code-horrible-performance) by Casey Muratori on object-oriented features such as virtual functions.
 * Many engines use their own replacement of the STL, such as the [Electronics Arts Standard Template Library](https://github.com/electronicarts/EASTL) whose documentation contains [justifications](https://github.com/electronicarts/EASTL/blob/master/doc/FAQ.md#info6-why-is-there-eastl-when-there-is-the-stl).
 * [Walter Bright on exceptions](https://news.ycombinator.com/item?id=28164247).
+* [Why Should I Care What Color the Bikeshed Is?](https://bikeshed.com/) by Poul-Henning.
 
 # 3. Algorithms and Data Structures
 
@@ -52,7 +53,7 @@ Engine programming requires a good understanding of how computers work in order 
 These resources cover the basics broadly:
 
 * The [*Performance-Aware Programming* Series](https://www.computerenhance.com/p/welcome-to-the-performance-aware) by Casey Muratori teaches the essentials. It is currently in production, with a weekly release schedule.
-* [*Computer Systems: A Programmer's Perspective*](http://csapp.cs.cmu.edu/) by Randal E. Bryant and David R. O'Hallaron. It has a slightly broader scope. Although most engine programming is done on Windows, the book requires Linux for doing the labs.
+* [*Computer Systems: A Programmer's Perspective*](http://csapp.cs.cmu.edu/) by Randal E. Bryant and David R. O'Hallaron. If Performance Aware doesn't yet cover a topic, you could look here to get started.
 
 The other resources listed below dive deeper into specific topics.
 
@@ -103,9 +104,6 @@ Rigorous linear algebra:
 * [*Linear Algebra Done Right*](https://linear.axler.net/) by Sheldon Axler.
 * [*Linear Algebra Done Wrong*](https://www.math.brown.edu/streil/papers/LADW/LADW.html) by Sergei Treil.
 
-Numerical algorithms:
-* [*Numerical Recipes: The Art of Scientific Computing*](http://numerical.recipes/) by William H. Press, Saul A. Teukolsky, William T. Vetterling and Brian P. Flannery.
-
 # 6. Engine Programming
 
 With the fundamental knowledge learned so far, you know enough to finally consider engines.
@@ -120,7 +118,9 @@ With the fundamental knowledge learned so far, you know enough to finally consid
 
 Rendering is one of the most important parts of an engine. There are often specialized roles for rendering, as opposed to generalist engine programmers. However, even as a generalist, you need to know the basics.
 
-* [Alex Tardif](https://alextardif.com/LearningGraphics.html) gives advice about learning graphics programming.
+* [Getting Started In Computer Graphics](https://www.jeremyong.com/graphics/2024/05/19/getting-started-in-computer-graphics/) by Jeremy Ong.
+* [Finding Your Home in Game Graphics Programming](https://alextardif.com/LearningGraphics.html) by Alex Tardif.
+* [3D Computer Graphics Programming for Beginners](https://docs.google.com/document/d/1JwwLYxFMDwuxX4Sc3znE-8jVIQMW1LWjuvYeLpiVf_8/) by Angelo Pesce.
 
 Introductory resources:
 * Cem Yuksel's video lectures: [*Introduction to Computer Graphics*](https://www.youtube.com/playlist?list=PLplnkTzzqsZTfYh4UbhLGpI5kGd5oW_Hh) and [*Interactive Computer Graphics*](https://www.youtube.com/playlist?list=PLplnkTzzqsZS3R5DjmCQsqupu43oS9CFN).
@@ -135,16 +135,22 @@ Resources for path tracing, useful to understand how rendering works by doing it
 Online tools:
 * [Shadertoy](https://www.shadertoy.com/), where people share shaders.
 
-To use the GPU, you need to go through a graphics API. OpenGL and Direct3D 11 are the easiest to start with. Their successors, Vulkan and Direct3D 12, are more complex, but these are what modern engines use because they allow building multiple command buffers in parallel with multriple threads. Below are resources for these APIs.
-
-OpenGL:
-* [*Learn OpenGL*](https://learnopengl.com/) by Joey de Vries.
+To use the GPU, you need to go through a graphics API. Modern engines use Direct3D 12 or Vulkan because they allow building multiple command buffers in parallel with multriple threads. However, Direct3D 11 is easier to learn. Below are resources for these APIs.
 
 Direct3D 11:
 * [The official documentation](https://learn.microsoft.com/en-us/windows/win32/direct3d11/atoc-dx-graphics-direct3d-11).
 * *Practical Rendering & Computation with Direct3D 11* by Jason Zink, Matt Pettineo and Jack Hoxley.
-* d7samurai's samples: [part 1](https://gist.github.com/d7samurai/261c69490cce0620d0bfc93003cd1052), [2](https://gist.github.com/d7samurai/aee35fd5d132c51e8b0a78699cbaa1e4) and [3](https://gist.github.com/d7samurai/abab8a580d0298cb2f34a44eec41d39d).
 * [Mārtiņš Možeiko's sample in C](https://gist.github.com/mmozeiko/5e727f845db182d468a34d524508ad5f).
+* [Mārtiņš Možeiko's instancing example](https://gist.github.com/mmozeiko/3c9ba3a0ec0c54aff8b2dec7ac724208).
+* d7samurai's samples: [part 1](https://gist.github.com/d7samurai/261c69490cce0620d0bfc93003cd1052), [2](https://gist.github.com/d7samurai/aee35fd5d132c51e8b0a78699cbaa1e4) and [3](https://gist.github.com/d7samurai/abab8a580d0298cb2f34a44eec41d39d).
+
+Direct3D 12:
+* [The official API documentation](https://learn.microsoft.com/en-us/windows/win32/direct3d12/direct3d-12-graphics).
+* [The specification](https://microsoft.github.io/DirectX-Specs/).
+* [Microsoft's samples](https://github.com/microsoft/DirectX-Graphics-Samples).
+* [*DX12 Do's And Don'ts*](https://developer.nvidia.com/dx12-dos-and-donts) by Nvidia.
+* [*A Gentle Introduction to D3D12*](https://alextardif.com/DX12Tutorial.html) by Alex Tardif.
+* [*GPU Memory Pools in D3D12*](https://therealmjp.github.io/posts/gpu-memory-pool/) by Matt Pettineo.
 
 Vulkan:
 * [The specification](https://registry.khronos.org/vulkan/specs/1.1/html/vkspec.html).
@@ -154,14 +160,6 @@ Vulkan:
 * [*Vulkan Tutorial*](https://vulkan-tutorial.com/) by Alexander Overvoorde.
 * [Vulkan C++ examples and demos](https://github.com/SaschaWillems/Vulkan) by Sascha Willems.
 * *Vulkan Synchronization Primer*, [part 1](https://www.jeremyong.com/vulkan/graphics/rendering/2018/11/22/vulkan-synchronization-primer/) and [2](https://www.jeremyong.com/vulkan/graphics/rendering/2018/11/23/vulkan-synchonization-primer-part-ii/) by Jeremy Ong.
-
-Direct3D 12:
-* [The official API documentation](https://learn.microsoft.com/en-us/windows/win32/direct3d12/direct3d-12-graphics).
-* [The specification](https://microsoft.github.io/DirectX-Specs/).
-* [Microsoft's samples](https://github.com/microsoft/DirectX-Graphics-Samples).
-* [*DX12 Do's And Don'ts*](https://developer.nvidia.com/dx12-dos-and-donts) by Nvidia.
-* [*A Gentle Introduction to D3D12*](https://alextardif.com/DX12Tutorial.html) by Alex Tardif.
-* [*GPU Memory Pools in D3D12*](https://therealmjp.github.io/posts/gpu-memory-pool/) by Matt Pettineo.
 
 To understand the abstractions provided by the graphics APIs and use them most effectively, it helps to also learn about how GPUs work:
 * [*A trip through the Graphics Pipeline*](https://fgiesen.wordpress.com/2011/07/09/a-trip-through-the-graphics-pipeline-2011-index/) by Fabian Giesen.
@@ -176,10 +174,7 @@ Chris Hecker has a list of resources: [*Physics References: An Annotated Bibliog
 Introduction to dynamics:
 * [*Game Physics*](https://gafferongames.com/post/integration_basics/) by Glenn Fiedler.
 * [*Rigid Body Dynamics*](https://www.chrishecker.com/Rigid_Body_Dynamics) by Chris Hecker.
-
-In-depth dynamics:
 * [*An Introduction to Physically Based Modeling*](http://www.cs.cmu.edu/afs/cs/user/baraff/www/pbm/pbm.html) by Andrew Witkin, David Baraff, and Michael Kass.
-* *Dynamic Simulations of Multibody Systems* by Murilo G. Coutinho.
 
 Collision detection:
 * [*Real-Time Collision Detection*](https://realtimecollisiondetection.net/) by Christer Ericson.
@@ -205,6 +200,7 @@ There are notable libraries known to be used by some engines. They satisfy requi
 * [stb](https://github.com/nothings/stb).
 * [EASTL](https://github.com/electronicarts/EASTL).
 * [Jolt Physics](https://github.com/jrouwe/JoltPhysics).
+* [Box2D](https://box2d.org/).
 
 # 7. Starting on Your First Job
 
