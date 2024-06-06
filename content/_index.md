@@ -83,7 +83,6 @@ Misc useful links:
 * Performance characteristics of x86 instructions: [uops.info](https://uops.info/).
 * [Compiler Explorer](https://godbolt.org/) is a tool that lets you see the assembly that various compilers produce from your code snippets.
 * Online reference for intrinsics: [Intel Intrinsics Guide](https://www.intel.com/content/www/us/en/docs/intrinsics-guide/index.html).
-* [Onboarding floating-point](https://www.altdevarts.com/p/onboarding-floating-point) by Mike Acton explains the basics of the floating-point formats.
 * Tool to see the floating point representation of a number: [Float Exposed](https://float.exposed/).
 
 # 5. Math
