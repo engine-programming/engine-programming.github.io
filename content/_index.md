@@ -218,6 +218,9 @@ Jeremy Ong also gives an overview of the important lenses through which he evalu
 * [*Teach Yourself Computer Science*](https://teachyourselfcs.com/) by Oz Nova and Myles Byrne, a more general list of resources for self-learning computer science.
 * [Handmade Network](https://handmade.network/), a community of programmers, many of whom have an interest in engine programming. Their Discord server is a good place to ask questions when you need help.
 
+Various adjacent topics:
+* [*Linkers, Loaders and Shared Libraries in Windows, Linux, and C++* - Ofek Shilon](https://www.youtube.com/watch?v=_enXuIxuNV4).
+
 # FAQ
 
 **Q**: How were the resources listed here chosen?
