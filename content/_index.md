@@ -160,6 +160,9 @@ Vulkan:
 * [Vulkan C++ examples and demos](https://github.com/SaschaWillems/Vulkan) by Sascha Willems.
 * *Vulkan Synchronization Primer*, [part 1](https://www.jeremyong.com/vulkan/graphics/rendering/2018/11/22/vulkan-synchronization-primer/) and [2](https://www.jeremyong.com/vulkan/graphics/rendering/2018/11/23/vulkan-synchonization-primer-part-ii/) by Jeremy Ong.
 
+At a higher level, how to organize API calls into a renderer:
+* [How to write a renderer for modern graphics APIs](https://blog.mecheye.net/2023/09/how-to-write-a-renderer-for-modern-apis/) by Jasper.
+
 To understand the abstractions provided by the graphics APIs and use them most effectively, it helps to also learn about how GPUs work:
 * [*A trip through the Graphics Pipeline*](https://fgiesen.wordpress.com/2011/07/09/a-trip-through-the-graphics-pipeline-2011-index/) by Fabian Giesen.
 * [*Breaking Down Barriers*](https://therealmjp.github.io/posts/breaking-down-barriers-part-1-whats-a-barrier/) by Matt Pettineo.
