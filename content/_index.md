@@ -43,8 +43,6 @@ Further resources:
 
 * *Hacker's Delight* by Henry S. Warren, Jr. is about bit manipulation tricks.
 * [*Advent of Code*](https://adventofcode.com/) is a website with fun exercises to practice.
-* [*I've been writing ring buffers wrong all these years*](https://www.snellman.net/blog/archive/2016-12-13-ring-buffers/) by Juho Snellman.
-* [*More numerical experiments in hashing*](http://www.pvk.ca/Blog/more_numerical_experiments_in_hashing.html) by Paul Khuong, on Robin Hood hashing.
 
 # 4. Computer Architecture and Performance
 
@@ -124,6 +122,10 @@ Rendering is one of the most important parts of an engine. There are often speci
 Introductory resources:
 * Cem Yuksel's video lectures: [*Introduction to Computer Graphics*](https://www.youtube.com/playlist?list=PLplnkTzzqsZTfYh4UbhLGpI5kGd5oW_Hh) and [*Interactive Computer Graphics*](https://www.youtube.com/playlist?list=PLplnkTzzqsZS3R5DjmCQsqupu43oS9CFN).
 
+Advanced resources:
+* *GPU Zen 3: Advanced Rendering Techniques* by Wolfgang Engel et al.
+* [*Mastering Graphics Programming with Vulkan*](https://github.com/PacktPublishing/Mastering-Graphics-Programming-with-Vulkan) by Marco Castorina and Gabriel Sassone.
+
 Reference that covers a lot of topics:
 * [*Real-Time Rendering*](https://www.realtimerendering.com/) by Tomas Akenine-Möller, Eric Haines, Naty Hoffman, Angelo Pesce, Michał Iwanicki, and Sébastien Hillaire. This itself contains many references to resources for the various presented techniques.
 
@@ -134,25 +136,20 @@ Resources for path tracing, useful to understand how rendering works by doing it
 Online tools:
 * [Shadertoy](https://www.shadertoy.com/), where people share shaders.
 
-To use the GPU, you need to go through a graphics API. Modern engines use Direct3D 12 or Vulkan because they allow building multiple command buffers in parallel with multriple threads. However, Direct3D 11 is easier to learn. Below are resources for these APIs.
+To use the GPU, you need to go through a graphics API. Modern engines use Direct3D 12 or Vulkan because they allow building multiple command buffers in parallel with multiple threads. However, Direct3D 11 is easier to learn. You should refer to the official documentations and specs, but below are listed additional resources.
 
 Direct3D 11:
-* [The official documentation](https://learn.microsoft.com/en-us/windows/win32/direct3d11/atoc-dx-graphics-direct3d-11).
 * *Practical Rendering & Computation with Direct3D 11* by Jason Zink, Matt Pettineo and Jack Hoxley.
 * [Mārtiņš Možeiko's sample in C](https://gist.github.com/mmozeiko/5e727f845db182d468a34d524508ad5f).
 * [Mārtiņš Možeiko's instancing example](https://gist.github.com/mmozeiko/3c9ba3a0ec0c54aff8b2dec7ac724208).
 * d7samurai's samples: [part 1](https://gist.github.com/d7samurai/261c69490cce0620d0bfc93003cd1052), [2](https://gist.github.com/d7samurai/aee35fd5d132c51e8b0a78699cbaa1e4) and [3](https://gist.github.com/d7samurai/abab8a580d0298cb2f34a44eec41d39d).
 
 Direct3D 12:
-* [The official API documentation](https://learn.microsoft.com/en-us/windows/win32/direct3d12/direct3d-12-graphics).
-* [The specification](https://microsoft.github.io/DirectX-Specs/).
 * [Microsoft's samples](https://github.com/microsoft/DirectX-Graphics-Samples).
-* [*DX12 Do's And Don'ts*](https://developer.nvidia.com/dx12-dos-and-donts) by Nvidia.
 * [*A Gentle Introduction to D3D12*](https://alextardif.com/DX12Tutorial.html) by Alex Tardif.
 * [*GPU Memory Pools in D3D12*](https://therealmjp.github.io/posts/gpu-memory-pool/) by Matt Pettineo.
 
 Vulkan:
-* [The specification](https://registry.khronos.org/vulkan/specs/1.1/html/vkspec.html).
 * [*How to Learn Vulkan*](https://www.jeremyong.com/c++/vulkan/graphics/rendering/2018/03/26/how-to-learn-vulkan/) by Jeremy Ong.
 * [*Vulkan in 30 minutes*](https://renderdoc.org/vulkan-in-30-minutes.html) by baldurk.
 * [*API without Secrets: Introduction to Vulkan*](https://www.intel.com/content/www/us/en/developer/articles/training/api-without-secrets-introduction-to-vulkan-preface.html) by Pawel Lapinski.
@@ -160,7 +157,8 @@ Vulkan:
 * [Vulkan C++ examples and demos](https://github.com/SaschaWillems/Vulkan) by Sascha Willems.
 * *Vulkan Synchronization Primer*, [part 1](https://www.jeremyong.com/vulkan/graphics/rendering/2018/11/22/vulkan-synchronization-primer/) and [2](https://www.jeremyong.com/vulkan/graphics/rendering/2018/11/23/vulkan-synchonization-primer-part-ii/) by Jeremy Ong.
 
-At a higher level, how to organize API calls into a renderer:
+Common to all modern APIs:
+* [*Advanced API Performance*](https://developer.nvidia.com/blog/tag/advanced-api-performance) by Nvidia.
 * [How to write a renderer for modern graphics APIs](https://blog.mecheye.net/2023/09/how-to-write-a-renderer-for-modern-apis/) by Jasper.
 
 To understand the abstractions provided by the graphics APIs and use them most effectively, it helps to also learn about how GPUs work:
@@ -220,9 +218,6 @@ Jeremy Ong also gives an overview of the important lenses through which he evalu
 * [*Teach Yourself Programming in Ten Years*](http://norvig.com/21-days.html) by Peter Norvig, general advice about learning programming.
 * [*Teach Yourself Computer Science*](https://teachyourselfcs.com/) by Oz Nova and Myles Byrne, a more general list of resources for self-learning computer science.
 * [Handmade Network](https://handmade.network/), a community of programmers, many of whom have an interest in engine programming. Their Discord server is a good place to ask questions when you need help.
-
-Various adjacent topics:
-* [*Linkers, Loaders and Shared Libraries in Windows, Linux, and C++* - Ofek Shilon](https://www.youtube.com/watch?v=_enXuIxuNV4).
 
 # FAQ
 
