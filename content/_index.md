@@ -156,6 +156,7 @@ Vulkan:
 * [*Vulkan Tutorial*](https://vulkan-tutorial.com/) by Alexander Overvoorde.
 * [Vulkan C++ examples and demos](https://github.com/SaschaWillems/Vulkan) by Sascha Willems.
 * *Vulkan Synchronization Primer*, [part 1](https://www.jeremyong.com/vulkan/graphics/rendering/2018/11/22/vulkan-synchronization-primer/) and [2](https://www.jeremyong.com/vulkan/graphics/rendering/2018/11/23/vulkan-synchonization-primer-part-ii/) by Jeremy Ong.
+* [*Vulkan graphics backend*](https://github.com/keengames/vulkan_backend/tree/main) used at Keen Games.
 
 Common to all modern APIs:
 * [*Advanced API Performance*](https://developer.nvidia.com/blog/tag/advanced-api-performance) by Nvidia.
